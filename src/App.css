@@ -1,0 +1,239 @@
+body {
+  background-color: #1C2025; 
+}
+
+.logo2 img {
+  transition: 0.5s;
+  animation: logo 1s ease infinite;
+}
+
+.logo2 img:hover {
+  box-shadow: 1px 1px 10px white;
+  transform: scale(1.1);
+}
+
+@keyframes logo {
+  50% {
+      box-shadow: 1px 1px 5px rgb(255, 255, 255);
+  }
+  80% {
+      box-shadow: 1px 1px 5px rgb(140, 159, 227);
+  }
+}
+
+@keyframes logo1 {
+  50% {
+      box-shadow: 1px 1px 10px rgb(255, 255, 255);
+  }
+  80% {
+      box-shadow: 1px 1px 10px rgb(0, 0, 0);
+  }
+}
+
+.btns ul li{
+    transition: 0.5s;
+    padding: 10px;
+    cursor: pointer;
+    text-shadow: 1px 1px 10px black;
+}
+
+.btns ul li:hover {
+  transform: scale(1.1);
+  background-color: #626262;
+  border-radius: 20px;
+  box-shadow: 1px 1px 10px black;
+}
+
+.logo img {
+  border-radius: 100%;
+  width: 200px;
+  height: 200px;
+    box-shadow: 1px 1px 10px black;
+      animation: logo1 2s ease infinite;
+}
+
+
+.interface {
+justify-content: center;
+justify-items: center;
+color: white;
+font-size: 20px;
+text-shadow: 1px 1px 10px black;
+}
+
+.interface h1,p,button {
+  padding: 10px;
+}
+
+.interface h1 {
+  font-size: 45px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.interface button {
+  background-color: #0D637D;
+  border-radius: 5px;
+  position: relative;
+  top: 1.5em;
+}
+
+.aboutsection {
+  color: white;
+  text-align: center;
+  position: relative;
+  font-size: 20px;
+  top: 100px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.aboutsection h1 {
+  font-size: 30px;
+  color: #1ac0f2;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.interface button {
+  transition: 0.5s;
+}
+
+.interface button:hover {
+  background-color: #1ac0f2;
+}
+
+.logosection {
+  width: 100px;
+  display: flex;
+  text-align: center;
+}
+.logosection img {
+  margin: 40px;
+  position: relative;
+  top: 10em;
+  border-radius: 20px;
+  transform-origin: top center;
+  animation: images 2s infinite ease-in;
+}
+@keyframes images {
+  50% {
+    transform: translateY(20px);
+  }
+  60% {
+    opacity: 0.1;
+  }
+}
+
+.card1 {
+  width: 300px;
+  height: 380px;
+  
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 1px 1px 10px black;
+}
+.card1 img {
+  border-radius: 20px 20px 0px 0px;
+}
+
+.card1 h2,button {
+  padding: 10px;
+  font-size: 20px;
+  color: white;
+}
+
+.card1 button {
+  border:1px solid #1ac0f2;
+  padding: 5px;
+  border-radius: 10px;
+  color: #1ac0f2;
+}
+
+.cards {
+  display: flex;
+ justify-items: center;
+ justify-content: center;
+  position: relative;
+  top: 20em;
+  gap: 50px;
+}
+
+.text1 {
+  position: relative;
+    font-size: 35px;
+     color: #1ac0f2;
+     top: 6em;
+     background-color: #002632;
+     box-shadow: 1px 1px 10px black;
+       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.card1 button {
+  transition: 0.5s;
+}
+
+.card1 button:hover {
+  background-color: #1ac0f2;
+  color: black;
+}
+
+.footer {
+display: flex;
+display: inline-block;
+text-align: center;
+position: relative;
+top: 25em;
+}
+.horizonline {
+  position: relative;
+  top: 20em;
+}
+
+.copyright {
+  text-align: center;
+  color: white;
+top: 27.5em;
+  position: relative;
+  display: inline;
+  padding: 20px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.links {
+  position: relative;
+  gap: 68vw;
+  font-size: 15px;
+  color: white;
+}
+
+.links img {
+  position: relative;
+  left: 43%;
+}
+
+.links a img {
+  transition: 0.3s;
+}
+
+.links a img:hover {
+  transform: scale(1.1);
+}
+
+.horizonline {
+  border: 0;
+  height: 1px;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  background-color: #1ac0f2;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 10px;
+  color: white;
+  font-size: 14px;
+}
