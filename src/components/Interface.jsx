@@ -15,11 +15,6 @@ import profileimage6 from "../assets/image/mongo.jpg";
 import profileimage7 from "../assets/image/react.png";
 
 const Interface = () => {
-  const [clicked, setClicked] = useState(false);
-  const handleClick = () => {
-    setClicked(true);
-    alert("Hello Please Visit My Profile LindedIn :)");
-  };
   return (
     <>
     <div className="interface w-[100%]">

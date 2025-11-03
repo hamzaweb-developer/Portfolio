@@ -1,24 +1,41 @@
-import React from 'react'
+import React, { useState } from 'react';
 import profileimage2 from "../assets/image/logo2.jpg";
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const handleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
     <>
-      <div className="navsection flex justify-between items-center px-10 py-5">
+      <div className="navsection">
         <div className="logo2">
-          <img src={profileimage2} className="w-16 h-16 rounded-full" alt="logo" />
+                <h1 className='name'>Hamza Web Developer</h1>
         </div>
-        <div className="btns">
-          <ul className="flex gap-8 text-white font-semibold">
-            <li>ABOUT</li>
-            <li>EXPERIENCE</li>
-            <li>PROJECTS</li>
-            <li>CONTACT</li>
+
+        {/* Hamburger Icon */}
+        <div className="menuicon" onClick={handleMenu}>
+          <div className={`bar ${menuOpen ? 'active' : ''}`}></div>
+          <div className={`bar ${menuOpen ? 'active' : ''}`}></div>
+          <div className={`bar ${menuOpen ? 'active' : ''}`}></div>
+        </div>
+
+        {/* Menu Items */}
+        <div className={`btns ${menuOpen ? 'showmenu' : ''}`}>
+          <ul>
+            <Link to="/"><li>HOME</li></Link>
+            <Link to="/about"><li>ABOUT</li></Link>
+            <Link to=""><li>EXPERIENCE</li></Link>
+            <Link to="/project"><li>PROJECTS</li></Link>
+            <Link to="/contact"><li>CONTACT</li></Link>
           </ul>
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
