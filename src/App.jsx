@@ -6,6 +6,8 @@ import About from './components/About'
 import Project from './components/Project'
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import Experiance from './components/Experiance'
+import Contact from './components/Contact'
 
 function App() {
   const router = createBrowserRouter([
@@ -25,24 +27,18 @@ function App() {
         <>
           <Navbar />
           <About/>
+          <Footer/>
         </>
       ),
     },
-    {
-      path: '/experiance',
-      element: (
-        <>
-          <Navbar />
-          <Footer />
-        </>
-      ),
-    },
+
     {
       path: '/project',
       element: (
         <>
           <Navbar />
           <Project/>
+          <Footer/>
         </>
       ),
     },
@@ -51,7 +47,17 @@ function App() {
       element: (
         <>
           <Navbar />
-          <Footer />
+          <Contact/>
+        </>
+      ),
+    },
+     {
+      path: '/experiance',
+      element: (
+        <>
+          <Navbar />
+          <Experiance/>
+          <Footer/>
         </>
       ),
     },

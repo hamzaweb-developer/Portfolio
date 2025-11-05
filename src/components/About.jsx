@@ -4,7 +4,7 @@ const About = () => {
   return (
             <div className="aboutsection">
       <h1>About</h1>
-      <p>Hi! I'm Hamza Shahid, a passionate Full Stack Web Developer who
+      <p className='name1'>Hi! I'm Hamza Shahid, a passionate Full Stack Web Developer who
             loves turning ideas into interactive and responsive web experiences.
             I specialize in building modern, user-friendly websites using HTML,
             CSS, JavaScript, React, Node.js, and Express. I enjoy creating clean
